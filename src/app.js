@@ -7,3 +7,6 @@ app.listen(PORT,()=>console.log(`Listening on PORT ${PORT}`))
 app.get('/',(req,res)=>{
     res.send({status:"success",message:"listo"})
 })
+app.get('/variable',(req,res)=>{
+    res.send({status:"success",variable:process.env.PAPA})
+})
